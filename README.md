@@ -35,7 +35,7 @@ This builds the app for production to the `build` folder. It correctly bundles R
 - Possibly display more repo details in each search result, create a modal with more information, or generate a page that would display more information about the repo instead of having the button link take them out of the application entirely
 - Deploy this app using something like heroku or netlify
 
-### Requirements
+## Requirements
 - Build a search UI that displays a list of GitHub user's repositories ranked by stars
 - Prioritize testing, features, UI / UX however you see fit, but develop the app as if it is a tool that users will be using on a daily basis
 - Use either the REST or GraphQL GitHub API. Please do not use a library for querying
@@ -44,13 +44,16 @@ This builds the app for production to the `build` folder. It correctly bundles R
 - Desired Result: when you search for Facebook, it will return the react and react-native repositories at the top of the list
 
 **NOTE on Desired Results**: Test cases confirmed by searching on the GitHub site with search terms and ranked by stars differ from the above requirement. At first I thought this had to be wrong, but I checked and rechecked the results on GitHub (and have provided the links to the GitHub web app searches below) The first three results for the following search terms are: 
+
   - "React": freeCodeCamp/freeCodeCamp, facebook/react, facebook/react-native
-    - [React GitHub Site Search Results](https://github.com/search?o=desc&q=react&s=stars&type=Repositories)
+    - [GitHub Site Search Results for "React"](https://github.com/search?o=desc&q=react&s=stars&type=Repositories)
+
+
   - "Facebook": facebook/jest, fighting41love/funNLP, davideuler/architecture.of.internet-product
-    - [Facebook Github Site Search Results](https://github.com/search?o=desc&q=facebook&s=stars&type=Repositories)
+    - [Github Site Search Results for "Facebook"](https://github.com/search?o=desc&q=facebook&s=stars&type=Repositories)
 
 
-### Process
+## Process
 - Used create-react-app to bootstrap a basic react application
 - Added Requirements to the README
 - Researched the best way to design and build features to satisfy the requirements
@@ -65,11 +68,17 @@ This builds the app for production to the `build` folder. It correctly bundles R
 
 
 ## Stack Used
-- React
-- TODO list from package.json
+- react
+- axios
+- react-bootstrap
+- node-sass
+- react-helmet
+- react-icons
+- react-router-dom
 
 
-### Decisions Made
+## Decisions Made
+Quick Explanations of a few of the decisions made while creating this application
 - Use GitHub API v3 to complete this application using REST to prioritize time over possible (very minimal) performance gains since it is such a small application
 - Use React-Bootstrap to build out a solid, but simple UI as quickly as possible, also providing the ability to ensure that the application would be responsive and therefore fit multiple screen sizes that different users might need in daily use
 - Not to add additional testing to the application, prioritizing functionality, UI/UX, and testing in that order. In the interest of time I decided to forgo adding additional tests
